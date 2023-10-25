@@ -11,6 +11,8 @@ command = "crontab -l -u root"
 result = subprocess.getoutput(command)
 lines = result.split('\n')
 
+print("Total Cron yang ada =",len(lines))
+
 row = 1
 
 for line in lines:
