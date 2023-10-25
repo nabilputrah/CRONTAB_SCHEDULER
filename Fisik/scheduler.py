@@ -30,5 +30,8 @@ for line in lines:
     row += 4
 
 # Simpan file Excel
-wb.save("jadwal_script.xlsx")
+try :
+    wb.save("jadwal_script.xlsx")
+except Exception as e:
+    print(str(e))
 print("File Excel jadwal_script.xlsx telah dibuat.")
